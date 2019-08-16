@@ -11,6 +11,7 @@
 * Elderly & infant care
 * Surveillance systems
 * Industrial manufacturing & assistance
+
 **& many more**
 
 ## Dataset used:
