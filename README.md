@@ -11,7 +11,7 @@
 * Elderly & infant care
 * Surveillance systems
 * Industrial manufacturing & assistance
-**& many more
+**& many more**
 
 ## Dataset used:
 
@@ -30,7 +30,7 @@
 
 Videos can be thought as many images stitched together. Thus we can assume subsequent frames in a video are correlated with respect to their semantic contents. Hence, we can extract images from the videos & then train a CNN pretrained on ImageNet dataset to classify the images extracted from the videos.
 
-**Accuracy achieved using this methodology 91%.
+**Accuracy achieved using this methodology 91%.**
 
 #### Dataflow diagram :
 
