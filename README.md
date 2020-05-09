@@ -2,7 +2,7 @@
 
 ## Problem statement :
 
-**Given a video (any file : .mp4, .avi, .MTS) , the task is to recognize,i.e, classify the activity being performed in the video.**
+**Given a video (any file : .mp4, .avi, .MTS) , the task is to recognize, i.e , classify the activity being performed in the video.**
 
 ![Activity classification](https://cse.buffalo.edu/~jcorso/r/actionbank/files/action_bank_montage.png)
 
@@ -35,13 +35,7 @@ Videos can be thought as many images stitched together. Thus we can assume subse
 
 #### Dataflow diagram :
 
-```
-      --------------------        -------------------          ------------------------ 
-     |     Video file     | ==>>  |  Extract frames |         |  Finetune a pretrained |
-     | (.mp4, .avi, .MTS) |       |   from videos   |   ==>>  |   network to classify  |
-      --------------------         -----------------          |     extracted images   |
-                                                               ------------------------   
-```
+![DFD-1](https://raw.githubusercontent.com/subhromitra/Video-analytics/master/dfd_1.JPG)
 
 ### 2) Using Spatio Temporal Classifer (CNN-LSTM):
 
@@ -51,13 +45,7 @@ However, accuracy achieved was only 56%.
 
 #### Dataflow diagram :
 
-```
-      --------------------        -------------------          ---------------------          -----------------
-     |     Video file     | ==>>  |  Extract frames |         |   Extract features  |        |  Train an LSTM  |
-     | (.mp4, .avi, .MTS) |       |   from videos   |   ==>>  |   from images using | ===>>  |  network on the |  
-      --------------------         -----------------          |    finetuned CNN    |        |  image features |
-                                                               ---------------------          -----------------
-```
+![DFD-2](https://raw.githubusercontent.com/subhromitra/Video-analytics/master/dfd_2.JPG)
 
 **Reasons for low accuracy :**
 
