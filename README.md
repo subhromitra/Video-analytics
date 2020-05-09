@@ -9,7 +9,7 @@
 ## Applications of such a system :
 
 * Elderly & infant care
-* Surveillance systems
+* Suspicious Activity Recognition
 * Industrial manufacturing & assistance
 
 **& many more**
